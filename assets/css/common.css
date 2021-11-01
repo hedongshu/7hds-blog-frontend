@@ -1,0 +1,123 @@
+/*highlight.js*/
+/*Syntax highlighting for the Web*/
+/*@font-face {*/
+/*  font-family: "Roboto";*/
+/*  src: url("https://cdn.boblog.com/Roboto-Regular.ttf");*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: "NotoSansTC";*/
+/*  src: url("https://cdn.boblog.com/NotoSansTC-Regular.otf");*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: "SourceCodePro";*/
+/*  src: url("https://cdn.boblog.com/SourceCodePro-Regular.ttf");*/
+/*  font-weight: normal;*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "SourceCodePro";*/
+/*  src: url("https://cdn.boblog.com/SourceCodePro-Bold.ttf");*/
+/*  font-weight: bold;*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "SourceCodePro";*/
+/*  src: url("https://cdn.boblog.com/SourceCodePro-Medium.ttf");*/
+/*  font-weight: 600;*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "JetBrainsMono";*/
+/*  src: url("https://cdn.boblog.com/JetBrainsMono-VariableFont_wght.ttf");*/
+/*}*/
+
+html, body {
+  /*font-family: SourceCodePro;*/
+}
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+pre {
+  padding: 1em;
+}
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+
+code.hljs {
+  padding: 3px 5px
+}
+
+.hljs {
+  color: #abb2bf;
+  font-size: 13px;
+  background: #282c34
+}
+.hljs code {
+  /*font-family: SourceCodePro;*/
+  /*font-family: "JetBrainsMono";*/
+}
+
+.hljs-comment,.hljs-quote {
+  color: #5c6370;
+  font-style: italic
+}
+
+.hljs-doctag,.hljs-formula,.hljs-keyword {
+  color: #c678dd
+}
+
+.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst {
+  color: #e06c75
+}
+
+.hljs-literal {
+  color: #56b6c2
+}
+
+.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string {
+  color: #98c379
+}
+
+.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable {
+  color: #d19a66
+}
+
+.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title {
+  color: #61aeee
+}
+
+.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_ {
+  color: #e6c07b
+}
+
+.hljs-emphasis {
+  font-style: italic
+}
+
+.hljs-strong {
+  font-weight: 700
+}
+
+.hljs-link {
+  text-decoration: underline
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.pagination {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
