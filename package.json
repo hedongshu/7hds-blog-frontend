@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "hds-blog-frontend",
   "version": "1.0.0",
   "private": true,
   "config": {
@@ -20,18 +20,24 @@
     "@nuxtjs/axios": "^5.13.6",
     "@xunlei/vue-lazy-component": "^1.1.3",
     "babel-plugin-component": "^1.1.1",
+    "chalk": "^4.1.2",
     "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.15.1",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "element-ui": "^2.15.2",
     "highlight.js": "^11.1.0",
+    "inquirer": "^7.3.3",
     "js-base64": "^3.6.1",
     "js-cookie": "^2.2.1",
     "markdown-it": "^12.1.0",
+    "node-ssh": "^12.0.1",
     "nuxt": "^2.15.7",
+    "ora": "^5.4.1",
     "sass": "1.32",
-    "sass-loader": "10.1"
+    "sass-loader": "10.1",
+    "shelljs": "^0.8.4",
+    "zip-local": "^0.3.4"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
