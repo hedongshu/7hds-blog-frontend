@@ -152,3 +152,7 @@ code.hljs {
   background: #0d342f;
   color: #d9c3ab;
 }
+
+* {
+  box-sizing: border-box;
+}

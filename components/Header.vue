@@ -91,7 +91,9 @@ a {
 
 .header-inner {
     box-sizing: border-box;
-    width: 1024px;
+    max-width: 1024px;
+    min-width: 320px;
+    width: 100%;
     height: 64px;
     margin: 0 auto;
     display: flex;
@@ -114,7 +116,9 @@ a {
 .search-box {
     position: relative;
     height: 100%;
-    width: 280px;
+    max-width: 280px;
+    width: 80%;
+    min-width: 150px;
 }
 
 .search {
@@ -164,6 +168,17 @@ a {
             text-decoration: none;
             display: inline-block;
         }
+    }
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 768px) {
+    .header-inner {
+        height: 120px;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 </style>

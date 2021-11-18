@@ -108,9 +108,12 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+
+
+<style scoped lang="scss" >
 .article {
-    width: 840px;
+    max-width: 840px;
+    min-width: 320px;
     margin: 0 auto;
 }
 
@@ -155,7 +158,8 @@ export default {
 .comment {
     box-sizing: border-box;
     padding: 20px 0;
-    width: 840px;
+    max-width: 840px;
+    min-width: 320px;
     margin: 0 auto;
 
     &-header {
@@ -182,5 +186,15 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 768px) {
+    .article {
+        width: 100%;
+    }
+}
 </style>
+
 

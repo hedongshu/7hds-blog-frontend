@@ -21,7 +21,10 @@
                                 </div>
                             </div>
 
-                            <div class="article-image">
+                            <div
+                                v-if="item.img_url && item.img_url.length > 0"
+                                class="article-image"
+                            >
                                 <img :src="item.img_url" alt="title" />
                             </div>
                         </a>
@@ -148,7 +151,6 @@ export default {
 
 }
 </script>
-
 <style scoped lang="scss">
 html,
 body,
@@ -176,21 +178,26 @@ a {
 
 .container {
     box-sizing: border-box;
-    width: 1024px;
+    max-width: 1024px;
+    min-width: 320px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 
     .article {
-        flex: 1;
-        padding-right: 24px;
+        flex-shrink: 0;
+        width: 80%;
         padding-top: 32px;
+        padding-right: 24px;
+        border-right: 1px solid #e6e6e6;
     }
 
     .sidebar {
-        width: 280px;
+        width: 20%;
         padding-left: 24px;
+
         padding-top: 32px;
-        border-left: 1px solid #e6e6e6;
     }
 }
 
@@ -298,6 +305,27 @@ a {
         font-size: 14px;
         color: #757575;
         margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        .sidebar {
+            width: 100%;
+            padding: 24px 5px;
+            .category-list {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        .article {
+            width: 100%;
+            padding: 0 24px;
+        }
     }
 }
 </style>
