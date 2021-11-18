@@ -17,7 +17,7 @@
 
                                 <div class="introduction">
                                     <div class="article-category">{{ item.category_info.name }}</div>
-                                    <div class="article-date">{{ item.created_at }}</div>
+                                    <div class="article-date">{{ item.created_at | formatTime }}</div>
                                 </div>
                             </div>
 
@@ -40,7 +40,7 @@
 
             <div class="sidebar">
                 <div class="category">
-                    <div class="category-title">CATEGORY LIST</div>
+                    <div class="category-title">分类列表</div>
                     <ul v-if="Array.isArray(categoryList)" class="category-list">
                         <li
                             v-for="item in categoryList"
@@ -64,11 +64,18 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { getArticleList } from '@/request/api/article'
 import { mapState } from 'vuex'
+import moment from 'moment'
 
 export default {
     components: {
         Header,
         Footer,
+    },
+    filters: {
+        formatTime(value) {
+            if (!value) return ''
+            return moment(value).format("YYYY-MM-DD HH:mm")
+        }
     },
     async asyncData(context) {
         // eslint-disable-next-line camelcase
@@ -92,6 +99,9 @@ export default {
             }
         }
     },
+    async fetch({ store }) {
+        await store.dispatch('category/getCategoryData')
+    },
     head() {
         return {
             title: 'hds - 7hds.com - 博客',
@@ -114,9 +124,7 @@ export default {
             )
         },
     },
-    async fetch({ store }) {
-        await store.dispatch('category/getCategoryData')
-    },
+
     methods: {
         async fetchData(id) {
             const [err, res] = await getArticleList({
@@ -136,7 +144,8 @@ export default {
             await this.fetchData()
             this.$scrollTo(0)
         }
-    }
+    },
+
 }
 </script>
 

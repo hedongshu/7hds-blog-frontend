@@ -30,7 +30,8 @@
 /*  src: url("https://cdn.boblog.com/JetBrainsMono-VariableFont_wght.ttf");*/
 /*}*/
 
-html, body {
+html,
+body {
   /*font-family: SourceCodePro;*/
 }
 li {
@@ -47,66 +48,91 @@ pre {
 pre code.hljs {
   display: block;
   overflow-x: auto;
-  padding: 1em
+  padding: 1em;
 }
 
 code.hljs {
-  padding: 3px 5px
+  padding: 3px 5px;
 }
 
 .hljs {
   color: #abb2bf;
   font-size: 13px;
-  background: #282c34
+  background: #282c34;
 }
 .hljs code {
   /*font-family: SourceCodePro;*/
   /*font-family: "JetBrainsMono";*/
 }
 
-.hljs-comment,.hljs-quote {
+.hljs-comment,
+.hljs-quote {
   color: #5c6370;
-  font-style: italic
+  font-style: italic;
 }
 
-.hljs-doctag,.hljs-formula,.hljs-keyword {
-  color: #c678dd
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword {
+  color: #c678dd;
 }
 
-.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst {
-  color: #e06c75
+.hljs-deletion,
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #e06c75;
 }
 
 .hljs-literal {
-  color: #56b6c2
+  color: #56b6c2;
 }
 
-.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string {
-  color: #98c379
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string,
+.hljs-regexp,
+.hljs-string {
+  color: #98c379;
 }
 
-.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable {
-  color: #d19a66
+.hljs-attr,
+.hljs-number,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color: #d19a66;
 }
 
-.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title {
-  color: #61aeee
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-title {
+  color: #61aeee;
 }
 
-.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_ {
-  color: #e6c07b
+.hljs-built_in,
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+  color: #e6c07b;
 }
 
 .hljs-emphasis {
-  font-style: italic
+  font-style: italic;
 }
 
 .hljs-strong {
-  font-weight: 700
+  font-weight: 700;
 }
 
 .hljs-link {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 .opacity {
@@ -120,4 +146,9 @@ code.hljs {
   align-items: center;
   justify-content: center;
   padding: 15px 0;
+}
+
+* ::selection {
+  background: #0d342f;
+  color: #d9c3ab;
 }
